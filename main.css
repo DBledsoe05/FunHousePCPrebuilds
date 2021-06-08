@@ -1,0 +1,247 @@
+/*Common elements*/
+body {
+    font-size: 67.5%;
+    font-family: Tahoma, Geneva, sans-serif;
+    padding: 0;
+    margin: 0;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+h1 {
+    color: #2BA967;
+    font-size: 2.0em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+    text-align: center;
+}
+p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.4em;
+    font-size: 2.0em;
+    margin: 0px 0.5em 0.75em 0px;
+    padding: 0px;
+}
+ol {
+    font-size: 1.2em;
+    margin: 0 0 0 1.0em;
+    padding: 0 0 0 1.0em;
+}
+ol li {
+    margin: 0;
+    padding: 0 0 0.2em;
+}
+a, a:visted {
+    color: #C64322;
+}
+a:hover {
+    color: #333;
+}
+hr {
+    padding: 0;
+    margin: 1.5em 1.5em 0.75em 0.5em;
+}
+.contentWrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 3.0em;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+div.clear {
+    clear:both;
+    font-size: 1%;
+}
+
+/*Header*/
+header {
+    padding: 2.5em 0 0.5em;
+    margin: 0 0 2.0em;
+}
+header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 7.0em;
+    letter-spacing: -0.025em;
+    margin: 0;
+    /*text-shadow: 1px 2px 0 #bd8437; offset-x | offset-y | blur-radius | color */
+}
+/*Nav Bars*/
+nav {
+    color: #000;
+    font-size: 1.7em;
+    letter-spacing: 0.04em;
+    padding: 1.0em 1.0em 0.5em;
+    margin: 1.0em 0 ;
+    text-align: center;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin: 0;
+}
+nav li a, nav li a:visted {
+    text-decoration: none;
+    color: red;
+    padding: 0.3em 0.6em;
+}
+nav li a:hover {
+    color: red;
+    background-color: rgba(252,251,243,0.75);
+}
+nav#ultilityMenu {
+    float: right;
+    margin: -1.5em 0 0 0;
+    padding: 0.35em;
+    background-color: rgba(64,54,47,0.8);
+    height: 1.3em;
+}
+nav#ultilityMenu li {
+    padding: 0 0.25em 0 0.2em;
+    vertical-align: middle;
+}
+nav#ultilityMenu ul li.acctNav a, nav#ultilityMenu ul li.acctNav a:visited{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    height: 1.3em;
+    padding: 0.5em;
+    margin: -0.4em 0 0 0;
+    font-size: 0.8em;
+}
+nav#ultilityMenu ul li.acctNav a:active {
+    background-color: red;
+}
+nav#ultilityMenu ul li.acctNav a:hover {
+    background-color: rgba(252,251,243,0.75);
+    color: red;
+}
+nav#ultilityMenu li a, nav#ultilityMenu li a:visited { padding: 0;}
+nav#ultilityMenu li a:hover { background-color: transparent;}
+nav#ultilityMenu ul li input#search {
+    vertical-align: middle;
+    margin: 0 0 0 1.0em;
+}
+nav#ultilityMenu ul li.acctNav::before, nav#ultilityMenu ul li input#search::before {
+    content: "| ";
+    color: #FCFBE6;
+}
+/*Sidebar Section*/
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    float: left;
+  }
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  .sidebar a.active {
+    background-color: red;
+    color: white;
+  }
+  .sidebar a:hover:not(.active) {
+    background-color: red;
+    color: white;
+  }
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+/*Main Section*/
+section #main {
+    /*background-color: #FCFBE6;*/
+    background-color: rgba(252,251,243,0.7);
+    margin: 0 0 2.0em;
+    padding: 1.5em 0 2.0em 1.5em;
+    display: inline-block;
+    border-radius: 2em;
+    box-shadow: 1px 1px 5px #777;/* offset-x | offset-y | blur-radius | color */
+}
+section div.panel {
+    float: right;
+    position: relative;
+    width: 250px;
+    margin: 0 0.5em 2.0em 0.5em;
+    padding: 1.0em;
+    background-color: #fff;
+    border: black solid 3px;
+    border-radius: 0.6em;
+}
+section div.panel img.cheeseType {
+    width: 100%;
+}
+/*Footer*/
+footer {
+    background-color: black;
+    height: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 2.0em;
+}
+footer ul#menuFooter {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+footer a, footer a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+button {
+    color: red;
+    background-color: black;
+    display: inline-block;
+    margin: 0 0.75em 0 0;
+    padding: 0.2em 0.5em;
+    border: 1px solid black;
+    text-transform: uppercase;
+}
